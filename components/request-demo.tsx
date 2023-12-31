@@ -2,6 +2,7 @@
 import { useForm, Controller } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import * as yup from "yup";
+import emailjs from "emailjs-com";
 
 import Link from "next/link";
 import Image from "next/image";
@@ -11,7 +12,7 @@ import toast, { Toaster } from "react-hot-toast";
 
 // Yup schema
 const schema = yup.object().shape({
-  email: yup.string().email("Upišite ispravan email").required("Email je obavezno polje"),
+  email: yup.string().required("Email je obavezno polje").email("Upišite ispravan email"),
   ime: yup.string().required("Ime je obavezno polje"),
   grad: yup.string().required("Grad je obavezno polje"),
   pitanje: yup.string().required("Vaša poruka je obavezno polje"),
@@ -41,18 +42,47 @@ export default function RequestDemo() {
   });
 
   const onSubmit = (data: any) => {
-    toast.success("Upit uspješno poslan! Javit ćemo Vam se u najkraćem mogućem roku.", {
-      duration: 5000,
+    const serviceId = "service_4423njb";
+    const templateId = "template_mp1ccrt";
+    const userId = "58llVOwbudJ1xJl3C";
+
+    const templateParams = {
+      user_name: data.ime,
+      user_email: data.email,
+      user_city: data.grad,
+      user_phone: data.mobitel,
+      user_question: data.pitanje,
+    };
+
+    const sendEmail = new Promise((resolve, reject) => {
+      emailjs.send(serviceId, templateId, templateParams, userId).then(
+        (response) => {
+          console.log("SUCCESS!", response.status, response.text);
+          resolve(response);
+        },
+        (error) => {
+          console.log("FAILED...", error);
+          reject(error);
+        }
+      );
     });
-    console.log(data);
-    reset({
-      email: "",
-      ime: "",
-      grad: "",
-      pitanje: "",
-      mobitel: "",
-      termsAccepted: true,
+
+    toast.promise(sendEmail, {
+      loading: "Slanje upita..",
+      success: "Upit uspješno poslan! Javit ćemo Vam se u najkraćem mogućem roku.",
+      error: "Došlo je do pogreške pri slanju upita.",
     });
+
+    sendEmail.then(() =>
+      reset({
+        email: "",
+        ime: "",
+        grad: "",
+        pitanje: "",
+        mobitel: "",
+        termsAccepted: true,
+      })
+    );
   };
 
   return (
@@ -78,7 +108,7 @@ export default function RequestDemo() {
               <h1 className="h2 font-playfair-display text-slate-800 mb-12">Kontaktirajte nas</h1>
 
               {/* Form */}
-              <form onSubmit={handleSubmit(onSubmit)}>
+              <form onSubmit={handleSubmit(onSubmit)} noValidate>
                 <div className="space-y-4">
                   <div>
                     <label className="block text-sm font-medium mb-1" htmlFor="email">
