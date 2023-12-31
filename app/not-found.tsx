@@ -1,17 +1,15 @@
-import Link from 'next/link'
-import Header from '@/components/ui/header'
-import Footer from '@/components/ui/footer'
+import Link from "next/link";
+import Header from "@/components/ui/header";
+import Footer from "@/components/ui/footer";
 
 export default function NotFound() {
   return (
     <div className="flex flex-col min-h-screen overflow-hidden">
-
       {/*  Site header */}
       <Header mode="light" />
 
       {/*  Page content */}
       <main className="grow border-b border-slate-200">
-
         <div className="max-w-6xl mx-auto px-4 sm:px-6">
           <div className="pt-32 pb-12 md:pt-40 md:pb-20">
             <div className="max-w-3xl mx-auto text-center">
@@ -24,20 +22,19 @@ export default function NotFound() {
                 </div>
                 <h1 className="h1 font-playfair-display text-slate-800 mb-4">Oops!</h1>
               </div>
-              <p className="text-xl text-slate-500">We couldn't find the page you're looking for.</p>
+              <p className="text-xl text-slate-500">Nismo mogli pronaći stranicu koju tražite.</p>
               <div className="mt-8">
-                <Link className="btn text-white bg-blue-600 hover:bg-blue-700" href="/">Back Home</Link>
+                <Link className="btn text-white bg-blue-600 hover:bg-blue-700" href="/">
+                  Povratak na početnu stranicu
+                </Link>
               </div>
             </div>
           </div>
         </div>
-
       </main>
-
 
       {/*  Site footer */}
       <Footer />
-
     </div>
   );
 }
