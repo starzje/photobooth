@@ -12,7 +12,7 @@ export default function PricingTables() {
           <div className="mb-4 pb-4 border-b border-slate-200">
             <div className="text-lg font-semibold text-slate-800 mb-1">Početni</div>
             <div className="inline-flex items-baseline mb-3">
-              <span className="h2 leading-7 font-playfair-display text-slate-800">250</span>
+              <span className="h2 leading-7 font-playfair-display text-slate-800">280</span>
               <span className="h3 font-medium text-slate-500">€</span>
             </div>
           </div>
@@ -156,7 +156,9 @@ export default function PricingTables() {
                 xmlns="http://www.w3.org/2000/svg">
                 <path d="M10.28 2.28L3.989 8.575 1.695 6.28A1 1 0 00.28 7.695l3 3a1 1 0 001.414 0l7-7A1 1 0 0010.28 2.28z" />
               </svg>
-              <span>Najam photobootha 5h+ (po dogovoru)</span>
+              <span>
+                Najam photobootha <strong>5h+</strong> (po dogovoru)
+              </span>
             </li>
             <li className="flex items-center">
               <svg
