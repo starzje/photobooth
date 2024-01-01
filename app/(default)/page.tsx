@@ -11,7 +11,6 @@ import Features03 from "@/components/features-home-03";
 import PricingSection from "@/components/pricing";
 import RequestDemo from "@/components/request-demo";
 import Faqs from "@/components/faqs";
-import Script from "next/script";
 
 export default function Home() {
   return (
@@ -28,17 +27,6 @@ export default function Home() {
         <meta property="og:type" content="website" />
         <meta property="og:locale" content="hr_HR" />
         <meta property="og:site_name" content="Photobooth Zagreb" />
-
-        {/* Google Analytics */}
-        <Script src="https://www.googletagmanager.com/gtag/js?id=G-QTHYY1LYQX" strategy="afterInteractive" />
-        <Script id="google-analytics" strategy="afterInteractive">
-          {`
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
-          gtag('config', 'G-QTHYY1LYQX');
-        `}
-        </Script>
       </Head>
       <Hero />
       <FeaturesBlocks />
