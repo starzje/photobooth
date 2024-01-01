@@ -1,5 +1,5 @@
 import Link from "next/link";
-import VideoThumb from "@/public/images/group-photo.jpg";
+import VideoThumb from "@/public/images/hero-image.jpg";
 import ModalVideo01 from "@/components/modal-video-01";
 
 export default function HeroHome() {

@@ -63,7 +63,7 @@ export default function FeaturesHome02() {
                     beforeEnter={() => heightFix()}
                     unmount={false}>
                     <div className="relative inline-flex flex-col">
-                      <h1>OVO JE SLIKA BILA</h1>
+                      <h1>TU IDE SLIKA</h1>
                     </div>
                   </Transition>
                   {/* Item 3 */}
@@ -79,7 +79,7 @@ export default function FeaturesHome02() {
                     beforeEnter={() => heightFix()}
                     unmount={false}>
                     <div className="relative inline-flex flex-col">
-                      <h1>OVO JE SLIKA BILA</h1>
+                      <h1>TU IDE DRUGA SLIKA</h1>
                     </div>
                   </Transition>
                 </div>
