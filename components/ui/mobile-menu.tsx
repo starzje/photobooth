@@ -2,7 +2,6 @@
 
 import { useState, useRef, useEffect } from "react";
 import { Transition } from "@headlessui/react";
-import Link from "next/link";
 
 export default function MobileMenu() {
   const [mobileNavOpen, setMobileNavOpen] = useState<boolean>(false);
@@ -67,45 +66,45 @@ export default function MobileMenu() {
           leaveTo="opacity-0">
           <ul className="px-5 py-4">
             <li>
-              <Link
+              <a
                 href="#galerija"
                 className="flex justify-center  font-medium text-slate-800 hover:text-blue-600 py-4"
                 onClick={() => setMobileNavOpen(false)}>
                 Galerija
-              </Link>
+              </a>
             </li>
             <li>
-              <Link
+              <a
                 href="#o-nama"
                 className="flex justify-center  font-medium text-slate-800 hover:text-blue-600 py-4"
                 onClick={() => setMobileNavOpen(false)}>
                 O nama
-              </Link>
+              </a>
             </li>
 
             <li>
-              <Link
+              <a
                 href="#cijenik"
                 className="flex justify-center  font-medium text-slate-800 hover:text-blue-600 py-4"
                 onClick={() => setMobileNavOpen(false)}>
                 Cijenik
-              </Link>
+              </a>
             </li>
             <li>
-              <Link
+              <a
                 href="#faq"
                 className="flex justify-center  font-medium text-slate-800 hover:text-blue-600 py-4"
                 onClick={() => setMobileNavOpen(false)}>
                 FAQ
-              </Link>
+              </a>
             </li>
             <li>
-              <Link
+              <a
                 href="#kontakt"
                 className="flex justify-center  font-medium text-slate-800 hover:text-blue-600 py-4"
                 onClick={() => setMobileNavOpen(false)}>
                 Kontakt
-              </Link>
+              </a>
             </li>
           </ul>
         </Transition>

@@ -21,37 +21,37 @@ export default function Footer() {
             <h6 className="text-sm text-slate-300 font-semibold mb-2">Navigacija</h6>
             <ul className="text-sm font-medium space-y-2">
               <li>
-                <Link
+                <a
                   href="/#galerija"
                   className="text-slate-500 hover:text-blue-600 transition duration-150 ease-in-out">
                   Galerija
-                </Link>
+                </a>
               </li>
               <li>
-                <Link
+                <a
                   href="/#o-nama"
                   className="text-slate-500 hover:text-blue-600 transition duration-150 ease-in-out">
                   O nama
-                </Link>
+                </a>
               </li>
               <li>
-                <Link
+                <a
                   href="/#cijenik"
                   className="text-slate-500 hover:text-blue-600 transition duration-150 ease-in-out">
                   Cijenik
-                </Link>
+                </a>
               </li>
               <li>
-                <Link href="/#faq" className="text-slate-500 hover:text-blue-600 transition duration-150 ease-in-out">
+                <a href="/#faq" className="text-slate-500 hover:text-blue-600 transition duration-150 ease-in-out">
                   FAQ
-                </Link>
+                </a>
               </li>
               <li>
-                <Link
+                <a
                   href="/#kontakt"
                   className="text-slate-500 hover:text-blue-600 transition duration-150 ease-in-out">
                   Kontakt
-                </Link>
+                </a>
               </li>
             </ul>
           </div>

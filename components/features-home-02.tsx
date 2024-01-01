@@ -3,7 +3,9 @@
 import { useState, useRef, useEffect } from "react";
 import { Transition } from "@headlessui/react";
 import Image from "next/image";
-import FeaturesImage from "@/public/images/pozadina-1.jpg";
+import FeaturesImage3 from "@/public/images/sekcija-3.png";
+import FeaturesImage2 from "@/public/images/sekcija-2.png";
+import FeaturesImage1 from "@/public/images/sekcija-1.png";
 
 export default function FeaturesHome02() {
   const [tab, setTab] = useState<number>(1);
@@ -47,7 +49,7 @@ export default function FeaturesHome02() {
                     beforeEnter={() => heightFix()}
                     unmount={false}>
                     <div className="relative inline-flex flex-col">
-                      <Image className="relative" src={FeaturesImage} alt="Features" />
+                      <Image className="relative" src={FeaturesImage1} alt="Features" />
                     </div>
                   </Transition>
                   {/* Item 2 */}
@@ -63,7 +65,7 @@ export default function FeaturesHome02() {
                     beforeEnter={() => heightFix()}
                     unmount={false}>
                     <div className="relative inline-flex flex-col">
-                      <h1>TU IDE SLIKA</h1>
+                      <Image className="relative" src={FeaturesImage2} alt="Features" />
                     </div>
                   </Transition>
                   {/* Item 3 */}
@@ -79,7 +81,7 @@ export default function FeaturesHome02() {
                     beforeEnter={() => heightFix()}
                     unmount={false}>
                     <div className="relative inline-flex flex-col">
-                      <h1>TU IDE DRUGA SLIKA</h1>
+                      <Image className="relative" src={FeaturesImage3} alt="Features" />
                     </div>
                   </Transition>
                 </div>

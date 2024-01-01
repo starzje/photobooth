@@ -195,7 +195,7 @@ export default function RequestDemo() {
                           {...field}
                           placeholder="Zagreb"
                           className="form-input py-2 w-full placeholder-gray-400"
-                          type="tel"
+                          type="text"
                         />
                       )}
                     />

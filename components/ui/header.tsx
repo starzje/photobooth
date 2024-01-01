@@ -1,6 +1,4 @@
-import Link from "next/link";
 import Logo from "./logo";
-import Dropdown from "@/components/utils/dropdown";
 import MobileMenu from "./mobile-menu";
 
 export default function Header({ mode = "dark" }: { mode?: string }) {
@@ -18,40 +16,40 @@ export default function Header({ mode = "dark" }: { mode?: string }) {
             {/* Desktop sign in links */}
             <ul className="flex grow justify-end flex-wrap items-center">
               <li>
-                <Link
+                <a
                   href="/#galerija"
                   className="font-medium text-slate-800 hover:text-blue-600 dark:text-slate-400 dark:hover:text-blue-600 px-3 lg:px-5 py-2 flex items-center transition duration-150 ease-in-out">
                   Galerija
-                </Link>
+                </a>
               </li>
               <li>
-                <Link
+                <a
                   href="/#o-nama"
                   className="font-medium text-slate-800 hover:text-blue-600 dark:text-slate-400 dark:hover:text-blue-600 px-3 lg:px-5 py-2 flex items-center transition duration-150 ease-in-out">
                   O nama
-                </Link>
+                </a>
               </li>
 
               <li>
-                <Link
+                <a
                   href="/#cijenik"
                   className="font-medium text-slate-800 hover:text-blue-600 dark:text-slate-400 dark:hover:text-blue-600 px-3 lg:px-5 py-2 flex items-center transition duration-150 ease-in-out">
                   Cijenik
-                </Link>
+                </a>
               </li>
               <li>
-                <Link
+                <a
                   href="/#faq"
                   className="font-medium text-slate-800 hover:text-blue-600 dark:text-slate-400 dark:hover:text-blue-600 px-3 lg:px-5 py-2 flex items-center transition duration-150 ease-in-out">
                   FAQ
-                </Link>
+                </a>
               </li>
               <li>
-                <Link
+                <a
                   href="/#kontakt"
                   className="font-medium text-slate-800 hover:text-blue-600 dark:text-slate-400 dark:hover:text-blue-600 px-3 lg:px-5 py-2 flex items-center transition duration-150 ease-in-out">
                   Kontakt
-                </Link>
+                </a>
               </li>
             </ul>
           </nav>
