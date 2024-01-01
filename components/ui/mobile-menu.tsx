@@ -67,7 +67,7 @@ export default function MobileMenu() {
           <ul className="px-5 py-4">
             <li>
               <a
-                href="#galerija"
+                href="/#galerija"
                 className="flex justify-center  font-medium text-slate-800 hover:text-blue-600 py-4"
                 onClick={() => setMobileNavOpen(false)}>
                 Galerija
@@ -75,7 +75,7 @@ export default function MobileMenu() {
             </li>
             <li>
               <a
-                href="#o-nama"
+                href="/#o-nama"
                 className="flex justify-center  font-medium text-slate-800 hover:text-blue-600 py-4"
                 onClick={() => setMobileNavOpen(false)}>
                 O nama
@@ -84,7 +84,7 @@ export default function MobileMenu() {
 
             <li>
               <a
-                href="#cijenik"
+                href="/#cijenik"
                 className="flex justify-center  font-medium text-slate-800 hover:text-blue-600 py-4"
                 onClick={() => setMobileNavOpen(false)}>
                 Cijenik
@@ -92,7 +92,7 @@ export default function MobileMenu() {
             </li>
             <li>
               <a
-                href="#faq"
+                href="/#faq"
                 className="flex justify-center  font-medium text-slate-800 hover:text-blue-600 py-4"
                 onClick={() => setMobileNavOpen(false)}>
                 FAQ
@@ -100,7 +100,7 @@ export default function MobileMenu() {
             </li>
             <li>
               <a
-                href="#kontakt"
+                href="/#kontakt"
                 className="flex justify-center  font-medium text-slate-800 hover:text-blue-600 py-4"
                 onClick={() => setMobileNavOpen(false)}>
                 Kontakt
