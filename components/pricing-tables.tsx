@@ -66,12 +66,12 @@ export default function PricingTables() {
             </li>
           </ul>
           <div className="p-3 rounded bg-slate-50">
-            <Link className="btn-sm text-white bg-blue-600 hover:bg-blue-700 w-full group" href="#kontakt">
+            <a className="btn-sm text-white bg-blue-600 hover:bg-blue-700 w-full group" href="#kontakt">
               Zatraži ponudu
               <span className="tracking-normal text-blue-300 group-hover:translate-x-0.5 transition-transform duration-150 ease-in-out ml-1">
                 -&gt;
               </span>
-            </Link>
+            </a>
           </div>
         </div>
 
@@ -125,12 +125,12 @@ export default function PricingTables() {
             </li>
           </ul>
           <div className="p-3 rounded bg-slate-50">
-            <Link className="btn-sm text-white bg-blue-600 hover:bg-blue-700 w-full group" href="#kontakt">
+            <a className="btn-sm text-white bg-blue-600 hover:bg-blue-700 w-full group" href="#kontakt">
               Zatraži ponudu
               <span className="tracking-normal text-blue-300 group-hover:translate-x-0.5 transition-transform duration-150 ease-in-out ml-1">
                 -&gt;
               </span>
-            </Link>
+            </a>
           </div>
         </div>
 
@@ -187,12 +187,12 @@ export default function PricingTables() {
             </li>
           </ul>
           <div className="p-3 rounded bg-slate-50">
-            <Link className="btn-sm text-white bg-blue-600 hover:bg-blue-700 w-full group" href="#kontakt">
+            <a className="btn-sm text-white bg-blue-600 hover:bg-blue-700 w-full group" href="#kontakt">
               Zatraži ponudu
               <span className="tracking-normal text-blue-300 group-hover:translate-x-0.5 transition-transform duration-150 ease-in-out ml-1">
                 -&gt;
               </span>
-            </Link>
+            </a>
           </div>
         </div>
       </div>

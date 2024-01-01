@@ -41,8 +41,8 @@ export default function Faqs() {
               datuma i logotipa vašeg događaja ili tvrtke na svaku fotografiju.
             </Accordion>
             <Accordion title="Mogu li gosti dobivati ispise fotografija na licu mjesta?">
-              Da, gosti mogu dobiti ispis fotografija na licu mjesta. Većinom su to 2 ispisa po fotografiji, gdje jedno
-              ostavljaju u knjizi uspomena, a drugo zadržavaju za sebe.
+              Da, gosti mogu dobiti ispis fotografija na licu mjesta. Većinom su to 2 ispisa po fotografiji, gdje jedan
+              ostavljaju u knjizi uspomena, a drugi zadržavaju za sebe.
             </Accordion>
             <span className="block border-t border-gray-200" aria-hidden="true"></span>
           </ul>

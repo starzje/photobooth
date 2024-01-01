@@ -98,7 +98,7 @@ export default function RequestDemo() {
                 <Link
                   className="inline-flex text-blue-600 transition duration-150 ease-in-out"
                   href="/"
-                  aria-label="Cruip">
+                  aria-label="Photobooth Zagreb">
                   <Image src="/images/logo-blue.svg" width={40} height={40} alt="Photobooth Zagreb" />
                 </Link>
               </div>
