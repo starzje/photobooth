@@ -4,7 +4,7 @@ import Link from "next/link";
 export default function Logo() {
   return (
     <Link href="/" className="block text-blue-600 transition duration-150 ease-in-out" aria-label="Cruip">
-      <Image src="/images/logo.png" width={40} height={40} alt="Photobooth" />
+      <Image src="images/logo-photobooth.svg" width={40} height={40} alt="Photobooth Zagreb" />
     </Link>
   );
 }

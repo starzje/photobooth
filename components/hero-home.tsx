@@ -23,7 +23,7 @@ export default function HeroHome() {
               </p>
               <div className="max-w-xs mx-auto sm:max-w-none sm:flex sm:justify-center md:justify-start space-y-4 sm:space-y-0 sm:space-x-4">
                 <div>
-                  <Link className="btn text-white bg-blue-600 hover:bg-blue-700 w-full group" href="/request-demo">
+                  <Link className="btn text-white bg-blue-600 hover:bg-blue-700 w-full group" href="#kontakt">
                     Rezerviraj
                     <span className="tracking-normal text-blue-300 group-hover:translate-x-0.5 transition-transform duration-150 ease-in-out ml-1">
                       -&gt;
@@ -31,7 +31,7 @@ export default function HeroHome() {
                   </Link>
                 </div>
                 <div>
-                  <Link className="btn text-white bg-slate-700 hover:bg-slate-800 w-full" href="#0">
+                  <Link className="btn text-white bg-slate-700 hover:bg-slate-800 w-full" href="#cijenik">
                     Cijenik
                   </Link>
                 </div>
