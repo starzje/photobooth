@@ -88,7 +88,7 @@ export default function RequestDemo() {
   return (
     <>
       {/* Content */}
-      <div className="w-full md:w-1/2 bg-slate-100 ">
+      <div id="kontakt" className="w-full md:w-1/2 bg-slate-100  ">
         <div className="min-h-screen h-full flex flex-col justify-center">
           <div className="px-5 sm:px-6 py-8">
             <div className="w-full max-w-md mx-auto">
@@ -293,7 +293,7 @@ export default function RequestDemo() {
         </div>
 
         {/* Quote */}
-        <div id="kontakt" className="min-h-screen h-full flex flex-col justify-center">
+        <div className="min-h-screen h-full flex flex-col justify-center">
           <div className="px-5 sm:px-6">
             <div className="w-full max-w-lg mx-auto">
               <h2 className="h3 md:text-4xl font-playfair-display text-slate-100 mb-4">
