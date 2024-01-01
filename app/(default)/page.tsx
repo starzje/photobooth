@@ -27,6 +27,19 @@ export default function Home() {
         <meta property="og:type" content="website" />
         <meta property="og:locale" content="hr_HR" />
         <meta property="og:site_name" content="Photobooth Zagreb" />
+
+        {/* Google Analytics */}
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-QTHYY1LYQX"></script>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'G-QTHYY1LYQX');
+            `,
+          }}
+        />
       </Head>
       <Hero />
       <FeaturesBlocks />
