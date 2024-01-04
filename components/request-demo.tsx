@@ -230,7 +230,7 @@ export default function RequestDemo() {
                 </div>
                 <div className="mt-6">
                   <button className="btn-sm w-full text-sm text-white bg-blue-600 hover:bg-blue-700 group">
-                    Submit{" "}
+                    Pošalji upit{" "}
                     <span className="tracking-normal text-blue-300 group-hover:translate-x-0.5 transition-transform duration-150 ease-in-out ml-1">
                       -&gt;
                     </span>
