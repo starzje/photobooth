@@ -15,6 +15,9 @@ export default function PricingTables() {
               <span className="h2 leading-7 font-playfair-display text-slate-800">280</span>
               <span className="h3 font-medium text-slate-500">€</span>
             </div>
+            <p className="text-sm text-slate-500">
+              * Uz paket moguće uzeti i knjigu uspomena koja se dodatno naplaćuje
+            </p>
           </div>
           <ul className="text-slate-500 space-y-3 grow mb-6">
             <li className="flex items-center">
@@ -91,6 +94,9 @@ export default function PricingTables() {
               <span className="h2 leading-7 font-playfair-display text-slate-800">380</span>
               <span className="h3 font-medium text-slate-500">€</span>
             </div>
+            <p className="text-sm text-slate-500">
+              * Uz paket moguće uzeti i knjigu uspomena koja se dodatno naplaćuje
+            </p>
           </div>
           <div className="font-medium mb-3">Sve iz početnog paketa plus:</div>
           <ul className="text-slate-500 space-y-3 grow mb-6">
@@ -146,6 +152,9 @@ export default function PricingTables() {
               <span className="h2 leading-7 font-playfair-display text-slate-800"> 500</span>
               <span className="h3 font-medium text-slate-500">€</span>
             </div>
+            <p className="text-sm text-slate-500">
+              * Uz paket moguće uzeti i knjigu uspomena koja se dodatno naplaćuje
+            </p>
           </div>
           <div className="font-medium mb-3">Sve iz početnog i premium paketa plus:</div>
           <ul className="text-slate-500 space-y-3 grow mb-6">

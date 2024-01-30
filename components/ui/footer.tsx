@@ -31,8 +31,8 @@ export default function Footer() {
                 </a>
               </li>
               <li>
-                <a href="/#cijenik" className="text-slate-500 hover:text-blue-600 transition duration-150 ease-in-out">
-                  Cijenik
+                <a href="/#cjenik" className="text-slate-500 hover:text-blue-600 transition duration-150 ease-in-out">
+                  Cjenik
                 </a>
               </li>
               <li>

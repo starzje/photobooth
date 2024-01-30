@@ -11,7 +11,7 @@ export default function Pricing() {
       <div className="relative max-w-6xl mx-auto px-4 sm:px-6">
         <div className="py-12 md:py-20">
           {/* Section header */}
-          <div id="cijenik" className="max-w-3xl mx-auto text-center pb-12">
+          <div id="cjenik" className="max-w-3xl mx-auto text-center pb-12">
             <h2 className="h2 font-playfair-display text-slate-100">Pronađi paket za sebe</h2>
           </div>
 

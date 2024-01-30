@@ -9,25 +9,34 @@ export default function MobileMenu() {
   const trigger = useRef<HTMLButtonElement>(null);
   const mobileNav = useRef<HTMLDivElement>(null);
 
-  // close the mobile menu on click outside
   useEffect(() => {
+    // Update body overflow based on mobileNavOpen state
+    document.body.style.overflow = mobileNavOpen ? "hidden" : "auto";
+
     const clickHandler = ({ target }: { target: EventTarget | null }): void => {
       if (!mobileNav.current || !trigger.current) return;
       if (!mobileNavOpen || mobileNav.current.contains(target as Node) || trigger.current.contains(target as Node))
         return;
       setMobileNavOpen(false);
     };
-    document.addEventListener("click", clickHandler);
-    return () => document.removeEventListener("click", clickHandler);
-  });
 
-  // close the mobile menu if the esc key is pressed
+    document.addEventListener("click", clickHandler);
+
+    return () => {
+      document.removeEventListener("click", clickHandler);
+      // Reset body overflow when component unmounts
+      document.body.style.overflow = "auto";
+    };
+  }, [mobileNavOpen]);
+
   useEffect(() => {
     const keyHandler = ({ keyCode }: { keyCode: number }): void => {
       if (!mobileNavOpen || keyCode !== 27) return;
       setMobileNavOpen(false);
     };
+
     document.addEventListener("keydown", keyHandler);
+
     return () => document.removeEventListener("keydown", keyHandler);
   });
 
@@ -84,10 +93,10 @@ export default function MobileMenu() {
 
             <li>
               <a
-                href="/#cijenik"
+                href="/#cjenik"
                 className="flex justify-center  font-medium text-slate-800 hover:text-blue-600 py-4"
                 onClick={() => setMobileNavOpen(false)}>
-                Cijenik
+                Cjenik
               </a>
             </li>
             <li>

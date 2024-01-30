@@ -31,8 +31,8 @@ export default function HeroHome() {
                   </a>
                 </div>
                 <div>
-                  <a className="btn text-white bg-slate-700 hover:bg-slate-800 w-full" href="#cijenik">
-                    Cijenik
+                  <a className="btn text-white bg-slate-700 hover:bg-slate-800 w-full" href="#cjenik">
+                    Cjenik
                   </a>
                 </div>
               </div>
