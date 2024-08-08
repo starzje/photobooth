@@ -26,7 +26,7 @@ export default function Faqs() {
               uspomena.
             </Accordion>
             <Accordion title="Mogu li uzeti knjigu uspomena uz bilo koji paket?">
-              Da. Knjiga uspomena se može uzeti uz bilo koji paket, te se dodatno naplaćuje 50 €.
+              Jedna knjiga uspomena uključena je u cijenu svakog paketa.
             </Accordion>
             <Accordion title="Koje vrste događaja pokrivate s photoboothom?">
               Naš photobooth je savršen za razne vrste događaja, uključujući vjenčanja, rođendane, korporativne evente,
