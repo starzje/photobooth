@@ -93,7 +93,7 @@ export default function Footer() {
           </ul>
 
           {/* Copyrights note */}
-          <div className="text-sm text-slate-500 mr-4">© studio F.M.I. Sva prava zadržana</div>
+          <div className="text-sm text-slate-500 mr-4">© 2025 studio F.M.I. Sva prava zadržana</div>
         </div>
       </div>
     </footer>
