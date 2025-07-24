@@ -1,10 +1,10 @@
 import Image from "next/image";
-import FeaturesImage01 from "@/public/images/6.jpg";
-import FeaturesImage03 from "@/public/images/3.jpg";
-import FeaturesImage04 from "@/public/images/11.jpg";
-import FeaturesImage05 from "@/public/images/1.jpg";
-import FeaturesImage06 from "@/public/images/9.jpg";
-import FeaturesImage07 from "@/public/images/4.jpg";
+import FeaturesImage05 from "@/public/images/6.jpg";
+import FeaturesImage03 from "@/public/images/n1.jpg";
+import FeaturesImage04 from "@/public/images/n2.jpg";
+import FeaturesImage01 from "@/public/images/n3.jpg";
+import FeaturesImage06 from "@/public/images/n4.jpg";
+import FeaturesImage07 from "@/public/images/n5.jpg";
 
 export default function FeaturesHome03() {
   return (
@@ -49,7 +49,7 @@ export default function FeaturesHome03() {
                   aria-hidden="true"></div>
                 <div className="overflow-hidden">
                   <Image
-                    className="w-full aspect-square object-cover group-hover:scale-105 transition duration-700 ease-out rounded-md"
+                    className="w-full aspect-square object-cover object-left group-hover:scale-105 transition duration-700 ease-out rounded-md"
                     src={FeaturesImage04}
                     width={300}
                     height={300}
@@ -102,7 +102,7 @@ export default function FeaturesHome03() {
                   aria-hidden="true"></div>
                 <div className="overflow-hidden">
                   <Image
-                    className="w-full aspect-square object-cover group-hover:scale-105 transition duration-700 ease-out rounded-md"
+                    className="w-full aspect-square object-cover  group-hover:scale-105 transition duration-700 ease-out rounded-md"
                     src={FeaturesImage06}
                     width={300}
                     height={300}

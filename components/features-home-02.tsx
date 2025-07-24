@@ -4,8 +4,8 @@ import { useState, useRef, useEffect } from "react";
 import { Transition } from "@headlessui/react";
 import Image from "next/image";
 import FeaturesImage3 from "@/public/images/sekcija-3.png";
-import FeaturesImage2 from "@/public/images/sekcija-2.png";
-import FeaturesImage1 from "@/public/images/sekcija-1.png";
+import FeaturesImage2 from "@/public/images/sekcija-1.png";
+import FeaturesImage1 from "@/public/images/photobooth.png";
 
 export default function FeaturesHome02() {
   const [tab, setTab] = useState<number>(1);
@@ -48,8 +48,8 @@ export default function FeaturesHome02() {
                     leaveTo="opacity-0 translate-y-16"
                     beforeEnter={() => heightFix()}
                     unmount={false}>
-                    <div className="relative inline-flex flex-col">
-                      <Image className="relative" src={FeaturesImage1} alt="Features" />
+                    <div className="relative inline-flex flex-col items-center justify-center">
+                      <Image className="relative md:w-[350px] w-[70%]" src={FeaturesImage1} alt="Features" />
                     </div>
                   </Transition>
                   {/* Item 2 */}
@@ -118,9 +118,9 @@ export default function FeaturesHome02() {
                     <path d="M8 16c-4.4 0-8-3.6-8-8 0-.6.4-1 1-1s1 .4 1 1c0 3.3 2.7 6 6 6s6-2.7 6-6-2.7-6-6-6c-.6 0-1-.4-1-1s.4-1 1-1c4.4 0 8 3.6 8 8s-3.6 8-8 8Z" />
                   </svg>
                   <div>
-                    <h6 className="text-slate-800 font-medium mb-1">Neograničen ispis fotografija</h6>
+                    <h6 className="text-slate-800 font-medium mb-1">Elegantno oblikovan photobooth</h6>
                     <p className="text-slate-500">
-                      Omogućujemo neograničen ispis fotografija za vrijeme trajanja najma fotobootha.
+                    Dizajn koji se savršeno uklapa u bilo koju atmosferu vašeg događaja.
                     </p>
                   </div>
                 </button>
@@ -141,9 +141,9 @@ export default function FeaturesHome02() {
                     <path d="M4.019 15.276.034 1.329A1.058 1.058 0 0 1 1.33.034L15.276 4.02c.896.299.996 1.494.1 1.893L8.8 8.8l-2.79 6.574c-.498.897-1.693.797-1.992-.1ZM2.525 2.525l2.69 9.463 1.892-4.383c.1-.199.299-.398.498-.498l4.383-1.893-9.463-2.69Z" />
                   </svg>
                   <div>
-                    <h6 className="text-slate-800 font-medium mb-1">Personalizirani dizajn</h6>
+                    <h6 className="text-slate-800 font-medium mb-1">Neograničen ispis i Personalizirani dizajn</h6>
                     <p className="text-slate-500">
-                      Nudimo personalizirani dizajn okvira i raspored fotografija na ispisu.
+                      Neograničen ispis fotografija s personaliziranim dizajnom okvira i prilagođenim rasporedom.
                     </p>
                   </div>
                 </button>

@@ -1,8 +1,5 @@
 "use client";
 
-import Link from "next/link";
-import { useState } from "react";
-
 export default function PricingTables() {
   return (
     <div>
@@ -106,7 +103,7 @@ export default function PricingTables() {
           <div className="mb-4 pb-4 border-b border-slate-200">
             <div className="text-lg font-semibold text-slate-800 mb-1">Paket 3h</div>
             <div className="inline-flex items-baseline mb-3">
-              <span className="h2 leading-7 font-playfair-display text-slate-800">410</span>
+              <span className="h2 leading-7 font-playfair-display text-slate-800">420</span>
               <span className="h3 font-medium text-slate-500">€</span>
             </div>
           </div>
@@ -201,7 +198,7 @@ export default function PricingTables() {
           <div className="mb-4 pb-4 border-b border-slate-200">
             <div className="text-lg font-semibold text-slate-800 mb-1">Paket 4h</div>
             <div className="inline-flex items-baseline mb-3">
-              <span className="h2 leading-7 font-playfair-display text-slate-800">460</span>
+              <span className="h2 leading-7 font-playfair-display text-slate-800">470</span>
               <span className="h3 font-medium text-slate-500">€</span>
             </div>
           </div>
