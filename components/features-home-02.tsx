@@ -5,7 +5,7 @@ import { Transition } from "@headlessui/react";
 import Image from "next/image";
 import FeaturesImage3 from "@/public/images/sekcija-3.png";
 import FeaturesImage2 from "@/public/images/sekcija-1.png";
-import FeaturesImage1 from "@/public/images/photobooth.png";
+import FeaturesImage1 from "@/public/images/photobooth-resized.png";
 
 export default function FeaturesHome02() {
   const [tab, setTab] = useState<number>(1);
@@ -49,7 +49,7 @@ export default function FeaturesHome02() {
                     beforeEnter={() => heightFix()}
                     unmount={false}>
                     <div className="relative inline-flex flex-col items-center justify-center">
-                      <Image className="relative md:w-[350px] w-[70%]" src={FeaturesImage1} alt="Features" />
+                      <Image className="relative " src={FeaturesImage1} alt="Features" />
                     </div>
                   </Transition>
                   {/* Item 2 */}
