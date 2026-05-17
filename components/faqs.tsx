@@ -16,34 +16,50 @@ export default function Faqs() {
               Naše usluge su dostupne na području cijele Hrvatske. Ukoliko se vaš event održava izvan Hrvatske, javite
               nam se i dogovorit ćemo se.
             </Accordion>
+            <Accordion title="Da li plaćamo stolicu za vas na svadbi?">
+              Ne — naš operater ne ostaje sjediti za stolom, već je uz photobooth i aktivan cijelu večer, tako da
+              stolica nije potrebna
+            </Accordion>
+            <Accordion title="Da li u vrijeme kupljenog najma ulazi vrijeme montaže I demontaže?">
+              Ne, u cijenu najma ulazi samo vrijeme kada se gosti mogu slikati.
+            </Accordion>
+            <Accordion title="Kako izgleda proces slikanja?">
+              Gosti uzmu rekvizite, kliknu na ekran i sustav automatski napravi fotografije. Hostesa isprinta sliku za
+              svakoga, jednu zalijepi u knjigu uspomena i pozove goste da napišu poruku.
+            </Accordion>
+            <Accordion title="Nudite li personalizirane natpise za rekvizite?">
+              Da, izrađujemo do 8 custom natpisa — idealno za korporativne evente ili tematske proslave. Usluga se
+              dodatno naplaćuje.
+            </Accordion>
+            <Accordion title="Koliko prostora I vremena je potrebno za postavljanje Photobootha?">
+              Za nesmetano postavljanje photobootha preporučujemo prostor veličine najmanje 2.5 × 2.5 metra, idealno uz
+              zid. Montaža traje cca 30min, operater dolazi najmanje 1h prije početka – da sve bude spremno na vrijeme.
+              Također, potrebno je osigurati pristup električnoj utičnici u blizini (produžni kabel imamo).
+            </Accordion>
             <Accordion title="Naplaćujete li dodatno putne troškove?">
               Za sve evente u Zagrebu i okolici, te u našoj podružnici u Gospiću, ne naplaćujemo putne troškove. Za sve
-              ostale evente naplaćujemo putne troškove u iznosu od 0.5 €/km.
+              ostale evente naplaćujemo putne troškove - javite se za ponudu.
             </Accordion>
             <Accordion title="Što je to knjiga uspomena?">
-              Knjiga uspomena je album u koji se zalijepe sve fotografije koje se naprave na eventu. Vaši gosti mogu
-              napisati poruku uz fotografiju, a na kraju eventa knjiga uspomena je vaša. Moguće je uzeti i više knjiga
-              uspomena.
+              - Knjiga uspomena je album u koji gosti zalijepe svoju fotografiju i napišu poruku. Na kraju večeri,
+              knjiga je vaša — trajna uspomena s porukama svih gostiju. Uključena je u svaki paket, a moguće je uzeti i
+              dodatne.
             </Accordion>
-            <Accordion title="Mogu li uzeti knjigu uspomena uz bilo koji paket?">
-              Jedna knjiga uspomena uključena je u cijenu svakog paketa.
-            </Accordion>
+
             <Accordion title="Koje vrste događaja pokrivate s photoboothom?">
-              Naš photobooth je savršen za razne vrste događaja, uključujući vjenčanja, rođendane, korporativne evente,
-              promocije i još mnogo toga.
+              Vjenčanja, rođendane, krstitke, mature, korporativne evente, team buildinge, promocije... ukratko, svaki
+              event gdje želite da se gosti zabave i odnesu uspomenu kući.
             </Accordion>
             <Accordion title="Postoji li ograničenje broja fotografija koje se mogu napraviti?">
-              Ne, nema ograničenja na broj fotografija koje se mogu snimiti tijekom vašeg događaja. Vaši gosti mogu
-              koristiti photobooth koliko god puta žele.
+              Nema ograničenja — gosti mogu dolaziti koliko god puta žele te svaki gost dobije svoju uspomenu u obliku
+              fotografije.
             </Accordion>
             <Accordion title="Kakve su opcije personalizacije fotografija?">
-              Nudimo razne opcije za personalizaciju fotografija, uključujući dodavanje prilagođenih okvira, teksta,
-              datuma i logotipa vašeg događaja ili tvrtke na svaku fotografiju.
+              Svaka fotografija dolazi s personaliziranim okvirom koji mi izrađujemo prema vašem eventu — s imenima,
+              datumom, logotipom ili temom proslave. Možete odabrati i raspored fotografija: 2 slike ili 3 slike na
+              jednom ispisanom stripu.
             </Accordion>
-            <Accordion title="Mogu li gosti dobivati ispise fotografija na licu mjesta?">
-              Da, gosti mogu dobiti ispis fotografija na licu mjesta. Većinom su to 2 ispisa po fotografiji, gdje jedan
-              ostavljaju u knjizi uspomena, a drugi zadržavaju za sebe.
-            </Accordion>
+
             <span className="block border-t border-gray-200" aria-hidden="true"></span>
           </ul>
         </div>

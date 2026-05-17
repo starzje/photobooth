@@ -181,7 +181,8 @@ export default function FeaturesBlocks() {
               </svg>
               <h3 className="h4 font-playfair-display mb-2">Jednostavno korištenje</h3>
               <p className="text-lg text-slate-500">
-                Naš moderni photobooth je dizajniran tako da je iznimno jednostavan za korištenje
+                Pritisnite gumb, nasmiješite se, uzmite fotku. Naš operator je cijelo vrijeme tu — animira goste i brine
+                se da svaka fotografija ispadne savršeno.
               </p>
             </div>
           </div>

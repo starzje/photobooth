@@ -68,7 +68,7 @@ export default function PricingTables() {
                 xmlns="http://www.w3.org/2000/svg">
                 <path d="M10.28 2.28L3.989 8.575 1.695 6.28A1 1 0 00.28 7.695l3 3a1 1 0 001.414 0l7-7A1 1 0 0010.28 2.28z" />
               </svg>
-              <span>Slanje svih slika na mail</span>
+              <span>Online galerija sa svim fotografijama eventa</span>
             </li>
             <li className="flex items-center">
               <svg
@@ -79,10 +79,21 @@ export default function PricingTables() {
               </svg>
               <span>Pozadina za slikanje</span>
             </li>
+            <li className="flex items-center">
+              <svg
+                className="w-3 h-3 fill-current text-emerald-500 mr-3 shrink-0"
+                viewBox="0 0 12 12"
+                xmlns="http://www.w3.org/2000/svg">
+                <path d="M10.28 2.28L3.989 8.575 1.695 6.28A1 1 0 00.28 7.695l3 3a1 1 0 001.414 0l7-7A1 1 0 0010.28 2.28z" />
+              </svg>
+              <span>
+                <b>*QR kod </b> — gosti skeniraju i trenutno dobivaju svoje fotografije na mobitel
+              </span>
+            </li>
           </ul>
           <div className="p-3 rounded bg-slate-50">
             <a className="btn-sm text-white bg-blue-600 hover:bg-blue-700 w-full group" href="#kontakt">
-              Zatraži ponudu
+              Rezerviraj termin
               <span className="tracking-normal text-blue-300 group-hover:translate-x-0.5 transition-transform duration-150 ease-in-out ml-1">
                 -&gt;
               </span>
@@ -163,7 +174,7 @@ export default function PricingTables() {
                 xmlns="http://www.w3.org/2000/svg">
                 <path d="M10.28 2.28L3.989 8.575 1.695 6.28A1 1 0 00.28 7.695l3 3a1 1 0 001.414 0l7-7A1 1 0 0010.28 2.28z" />
               </svg>
-              <span>Slanje svih slika na mail</span>
+              <span>Online galerija sa svim fotografijama eventa</span>
             </li>
             <li className="flex items-center">
               <svg
@@ -174,10 +185,21 @@ export default function PricingTables() {
               </svg>
               <span>Pozadina za slikanje</span>
             </li>
+            <li className="flex items-center">
+              <svg
+                className="w-3 h-3 fill-current text-emerald-500 mr-3 shrink-0"
+                viewBox="0 0 12 12"
+                xmlns="http://www.w3.org/2000/svg">
+                <path d="M10.28 2.28L3.989 8.575 1.695 6.28A1 1 0 00.28 7.695l3 3a1 1 0 001.414 0l7-7A1 1 0 0010.28 2.28z" />
+              </svg>
+              <span>
+                <b>*QR kod </b> — gosti skeniraju i trenutno dobivaju svoje fotografije na mobitel
+              </span>
+            </li>
           </ul>
           <div className="p-3 rounded bg-slate-50">
             <a className="btn-sm text-white bg-blue-600 hover:bg-blue-700 w-full group" href="#kontakt">
-              Zatraži ponudu
+              Rezerviraj termin
               <span className="tracking-normal text-blue-300 group-hover:translate-x-0.5 transition-transform duration-150 ease-in-out ml-1">
                 -&gt;
               </span>
@@ -258,7 +280,7 @@ export default function PricingTables() {
                 xmlns="http://www.w3.org/2000/svg">
                 <path d="M10.28 2.28L3.989 8.575 1.695 6.28A1 1 0 00.28 7.695l3 3a1 1 0 001.414 0l7-7A1 1 0 0010.28 2.28z" />
               </svg>
-              <span>Slanje svih slika na mail</span>
+              <span>Online galerija sa svim fotografijama eventa</span>
             </li>
             <li className="flex items-center">
               <svg
@@ -269,10 +291,21 @@ export default function PricingTables() {
               </svg>
               <span>Pozadina za slikanje</span>
             </li>
+            <li className="flex items-center">
+              <svg
+                className="w-3 h-3 fill-current text-emerald-500 mr-3 shrink-0"
+                viewBox="0 0 12 12"
+                xmlns="http://www.w3.org/2000/svg">
+                <path d="M10.28 2.28L3.989 8.575 1.695 6.28A1 1 0 00.28 7.695l3 3a1 1 0 001.414 0l7-7A1 1 0 0010.28 2.28z" />
+              </svg>
+              <span>
+                <b>*QR kod </b> — gosti skeniraju i trenutno dobivaju svoje fotografije na mobitel
+              </span>
+            </li>
           </ul>
           <div className="p-3 rounded bg-slate-50">
             <a className="btn-sm text-white bg-blue-600 hover:bg-blue-700 w-full group" href="#kontakt">
-              Zatraži ponudu
+              Rezerviraj termin
               <span className="tracking-normal text-blue-300 group-hover:translate-x-0.5 transition-transform duration-150 ease-in-out ml-1">
                 -&gt;
               </span>
@@ -282,6 +315,13 @@ export default function PricingTables() {
       </div>
       <div className="mx-auto flex justify-center items-center text-center pt-8">
         Za najam PhotoBootha na više sati ili dana, javite se kako bismo Vam složili personaliziranu ponudu.
+      </div>
+      <div className="mx-auto flex justify-center items-center text-center pt-2">
+        Uključuje dostavu, postavljanje i demontažu.
+      </div>
+      <div className="mx-auto flex justify-center items-center text-center pt-2">
+        *Generiranje QR koda ovisi o stabilnoj internet vezi te ga u nekim slučajevima ne možemo garantirati (npr.
+        Podrumi)
       </div>
     </div>
   );
