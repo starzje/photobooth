@@ -101,6 +101,14 @@ export default function MobileMenu() {
             </li>
             <li>
               <a
+                href="/#recenzije"
+                className="flex justify-center  font-medium text-slate-800 hover:text-blue-600 py-4"
+                onClick={() => setMobileNavOpen(false)}>
+                Recenzije
+              </a>
+            </li>
+            <li>
+              <a
                 href="/#faq"
                 className="flex justify-center  font-medium text-slate-800 hover:text-blue-600 py-4"
                 onClick={() => setMobileNavOpen(false)}>

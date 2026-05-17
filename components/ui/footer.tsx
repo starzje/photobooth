@@ -36,6 +36,13 @@ export default function Footer() {
                 </a>
               </li>
               <li>
+                <a
+                  href="/#recenzije"
+                  className="text-slate-500 hover:text-blue-600 transition duration-150 ease-in-out">
+                  Recenzije
+                </a>
+              </li>
+              <li>
                 <a href="/#faq" className="text-slate-500 hover:text-blue-600 transition duration-150 ease-in-out">
                   FAQ
                 </a>
@@ -101,7 +108,7 @@ export default function Footer() {
           </ul>
 
           {/* Copyrights note */}
-          <div className="text-sm text-slate-500 mr-4">© 2025 studio F.M.I. Sva prava zadržana</div>
+          <div className="text-sm text-slate-500 mr-4">© 2026. Creative House, obrt za usluge. Sva prava zadržana</div>
         </div>
       </div>
     </footer>
