@@ -150,7 +150,7 @@ export default function FeaturesHome03() {
             </div>
 
             {/* 7th div */}
-            <div data-aos="fade-up">
+            <div data-aos="fade-up" className="hidden md:block">
               <div className="relative block group mb-2 cursor-pointer" onClick={() => setSelectedImage(FeaturesImage08)}>
                 <div
                   className="absolute inset-0 pointer-events-none border-2 border-slate-500 opacity-20 translate-x-4 -translate-y-4 group-hover:translate-x-0 group-hover:translate-y-0 transition duration-300 ease-out -z-10"
@@ -168,7 +168,7 @@ export default function FeaturesHome03() {
             </div>
 
             {/* 8th div */}
-            <div data-aos="fade-up" data-aos-delay="100">
+            <div data-aos="fade-up" data-aos-delay="100" className="hidden md:block">
               <div className="relative block group mb-2 cursor-pointer" onClick={() => setSelectedImage(FeaturesImage09)}>
                 <div
                   className="absolute inset-0 pointer-events-none border-2 border-slate-500 opacity-20 translate-x-4 -translate-y-4 group-hover:translate-x-0 group-hover:translate-y-0 transition duration-300 ease-out -z-10"
@@ -186,7 +186,7 @@ export default function FeaturesHome03() {
             </div>
 
             {/* 9th div */}
-            <div data-aos="fade-up" data-aos-delay="200">
+            <div data-aos="fade-up" data-aos-delay="200" className="hidden md:block">
               <div className="relative block group mb-2 cursor-pointer" onClick={() => setSelectedImage(FeaturesImage10)}>
                 <div
                   className="absolute inset-0 pointer-events-none border-2 border-slate-500 opacity-20 translate-x-4 -translate-y-4 group-hover:translate-x-0 group-hover:translate-y-0 transition duration-300 ease-out -z-10"
