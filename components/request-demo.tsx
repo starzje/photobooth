@@ -83,7 +83,7 @@ export default function RequestDemo() {
         (error) => {
           console.log("FAILED...", error);
           reject(error);
-        }
+        },
       );
     });
 
@@ -102,7 +102,7 @@ export default function RequestDemo() {
         pitanje: "",
         mobitel: "",
         termsAccepted: true,
-      })
+      }),
     );
   };
 
@@ -246,36 +246,40 @@ export default function RequestDemo() {
                             return `${y}-${m}-${d}`;
                           };
                           return (
-                          <div className="relative" ref={calendarRef}>
-                            <input
-                              readOnly
-                              value={
-                                value
-                                  ? parseLocalDate(value).toLocaleDateString("hr-HR", { day: "2-digit", month: "2-digit", year: "numeric" })
-                                  : ""
-                              }
-                              placeholder="Odaberite datum"
-                              className="form-input py-2 w-full placeholder-gray-400 cursor-pointer"
-                              onClick={() => setCalendarOpen(!calendarOpen)}
-                            />
-                            {calendarOpen && (
-                              <div className="absolute z-50 mt-1">
-                                <Calendar
-                                  onChange={(date: any) => {
-                                    const d = date as Date;
-                                    onChange(toLocalDateString(d));
-                                    setCalendarOpen(false);
-                                  }}
-                                  value={value ? parseLocalDate(value) : null}
-                                  minDate={new Date()}
-                                  locale="hr-HR"
-                                  prev2Label={null}
-                                  next2Label={null}
-                                  minDetail="year"
-                                />
-                              </div>
-                            )}
-                          </div>
+                            <div className="relative" ref={calendarRef}>
+                              <input
+                                readOnly
+                                value={
+                                  value
+                                    ? parseLocalDate(value).toLocaleDateString("hr-HR", {
+                                        day: "2-digit",
+                                        month: "2-digit",
+                                        year: "numeric",
+                                      })
+                                    : ""
+                                }
+                                placeholder="Odaberite datum"
+                                className="form-input py-2 w-full placeholder-gray-400 cursor-pointer"
+                                onClick={() => setCalendarOpen(!calendarOpen)}
+                              />
+                              {calendarOpen && (
+                                <div className="absolute z-50 mt-1">
+                                  <Calendar
+                                    onChange={(date: any) => {
+                                      const d = date as Date;
+                                      onChange(toLocalDateString(d));
+                                      setCalendarOpen(false);
+                                    }}
+                                    value={value ? parseLocalDate(value) : null}
+                                    minDate={new Date()}
+                                    locale="hr-HR"
+                                    prev2Label={null}
+                                    next2Label={null}
+                                    minDetail="year"
+                                  />
+                                </div>
+                              )}
+                            </div>
                           );
                         }}
                       />
@@ -383,6 +387,9 @@ export default function RequestDemo() {
               <div className="space-y-3">
                 <p className="text-slate-400 italic">
                   Kontaktirajte nas i rado ćemo Vam pomoći u odabiru paketa ili odgovoriti na sva Vaša pitanja.
+                  <br />
+                  <br />
+                  Za brži dogovor, možete nas kontaktirati putem Whatsapp-a na broj +385 97 612 3689.
                 </p>
               </div>
             </div>

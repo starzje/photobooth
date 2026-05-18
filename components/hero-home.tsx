@@ -46,8 +46,8 @@ export default function HeroHome() {
               thumbHeight={405}
               thumbAlt="Modal video thumbnail"
               video="/videos/photobooth-video.mp4"
-              videoWidth={1920}
-              videoHeight={1080}
+              videoWidth={1080}
+              videoHeight={1920}
             />
           </div>
         </div>

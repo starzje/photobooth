@@ -41,8 +41,8 @@ export default function Faqs() {
               ostale evente naplaćujemo putne troškove - javite se za ponudu.
             </Accordion>
             <Accordion title="Što je to knjiga uspomena?">
-              - Knjiga uspomena je album u koji gosti zalijepe svoju fotografiju i napišu poruku. Na kraju večeri,
-              knjiga je vaša — trajna uspomena s porukama svih gostiju. Uključena je u svaki paket, a moguće je uzeti i
+              Knjiga uspomena je album u koji gosti zalijepe svoju fotografiju i napišu poruku. Na kraju večeri, knjiga
+              je vaša — trajna uspomena s porukama svih gostiju. Uključena je u svaki paket, a moguće je uzeti i
               dodatne.
             </Accordion>
 

@@ -71,12 +71,29 @@ export default function ModalVideo01({
             leaveFrom="oopacity-100 scale-100"
             leaveTo="opacity-0 scale-95"
           >
-            <div className="max-w-6xl mx-auto h-full flex items-center">
-              <Dialog.Panel className="w-full max-h-full aspect-video bg-black overflow-hidden">
-                <video ref={videoRef} width={videoWidth} height={videoHeight} loop controls>
+            <div className="max-w-6xl mx-auto h-full flex items-center justify-center">
+              <Dialog.Panel
+                className="relative bg-black overflow-hidden max-h-screen"
+                style={{
+                  aspectRatio: `${videoWidth} / ${videoHeight}`,
+                  width: videoHeight > videoWidth
+                    ? `min(100%, calc(100dvh * ${videoWidth / videoHeight}))`
+                    : '100%',
+                }}
+              >
+                <video ref={videoRef} width={videoWidth} height={videoHeight} loop controls className="w-full h-full">
                   <source src={video} type="video/mp4" />
                   Your browser does not support the video tag.
                 </video>
+                <button
+                  className="absolute top-3 right-3 z-10 flex items-center justify-center w-9 h-9 rounded-full bg-black bg-opacity-60 text-white hover:bg-opacity-90 transition"
+                  onClick={() => setModalOpen(false)}
+                  aria-label="Close video"
+                >
+                  <svg className="w-4 h-4 fill-current" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M.293.293a1 1 0 011.414 0L8 6.586 14.293.293a1 1 0 111.414 1.414L9.414 8l6.293 6.293a1 1 0 01-1.414 1.414L8 9.414l-6.293 6.293A1 1 0 01.293 14.293L6.586 8 .293 1.707A1 1 0 01.293.293z" />
+                  </svg>
+                </button>
               </Dialog.Panel>
             </div>
           </Transition.Child>

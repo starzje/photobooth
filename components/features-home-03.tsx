@@ -8,9 +8,9 @@ import FeaturesImage04 from "@/public/images/n2.jpg";
 import FeaturesImage01 from "@/public/images/n3.jpg";
 import FeaturesImage06 from "@/public/images/n4.jpg";
 import FeaturesImage07 from "@/public/images/n5.jpg";
-import FeaturesImage08 from "@/public/images/7.jpg";
-import FeaturesImage09 from "@/public/images/8.jpg";
-import FeaturesImage10 from "@/public/images/9.jpg";
+import FeaturesImage08 from "@/public/images/n10.jpg";
+import FeaturesImage09 from "@/public/images/n11.jpg";
+import FeaturesImage10 from "@/public/images/n12.jpg";
 
 export default function FeaturesHome03() {
   const [selectedImage, setSelectedImage] = useState<StaticImageData | null>(null);
@@ -44,7 +44,9 @@ export default function FeaturesHome03() {
           <div className="max-w-sm mx-auto md:max-w-none grid gap-12 md:grid-cols-3 md:gap-x-10 md:gap-y-10 items-start">
             {/* 1st div */}
             <div data-aos="fade-up">
-              <div className="relative block group mb-2 cursor-pointer" onClick={() => setSelectedImage(FeaturesImage01)}>
+              <div
+                className="relative block group mb-2 cursor-pointer"
+                onClick={() => setSelectedImage(FeaturesImage01)}>
                 <div
                   className="absolute inset-0 pointer-events-none border-2 border-slate-500 opacity-20 translate-x-4 -translate-y-4 group-hover:translate-x-0 group-hover:translate-y-0 transition duration-300 ease-out -z-10"
                   aria-hidden="true"></div>
@@ -62,7 +64,9 @@ export default function FeaturesHome03() {
 
             {/* 2nd div */}
             <div data-aos="fade-up" data-aos-delay="100">
-              <div className="relative block group mb-2 cursor-pointer" onClick={() => setSelectedImage(FeaturesImage04)}>
+              <div
+                className="relative block group mb-2 cursor-pointer"
+                onClick={() => setSelectedImage(FeaturesImage04)}>
                 <div
                   className="absolute inset-0 pointer-events-none border-2 border-slate-500 opacity-20 translate-x-4 -translate-y-4 group-hover:translate-x-0 group-hover:translate-y-0 transition duration-300 ease-out -z-10"
                   aria-hidden="true"></div>
@@ -80,7 +84,9 @@ export default function FeaturesHome03() {
 
             {/* 3rd div */}
             <div data-aos="fade-up" data-aos-delay="200">
-              <div className="relative block group mb-2 cursor-pointer" onClick={() => setSelectedImage(FeaturesImage03)}>
+              <div
+                className="relative block group mb-2 cursor-pointer"
+                onClick={() => setSelectedImage(FeaturesImage03)}>
                 <div
                   className="absolute inset-0 pointer-events-none border-2 border-slate-500 opacity-20 translate-x-4 -translate-y-4 group-hover:translate-x-0 group-hover:translate-y-0 transition duration-300 ease-out -z-10"
                   aria-hidden="true"></div>
@@ -97,7 +103,9 @@ export default function FeaturesHome03() {
             </div>
             {/* 4th div */}
             <div data-aos="fade-up">
-              <div className="relative block group mb-2 cursor-pointer" onClick={() => setSelectedImage(FeaturesImage05)}>
+              <div
+                className="relative block group mb-2 cursor-pointer"
+                onClick={() => setSelectedImage(FeaturesImage05)}>
                 <div
                   className="absolute inset-0 pointer-events-none border-2 border-slate-500 opacity-20 translate-x-4 -translate-y-4 group-hover:translate-x-0 group-hover:translate-y-0 transition duration-300 ease-out -z-10"
                   aria-hidden="true"></div>
@@ -115,7 +123,9 @@ export default function FeaturesHome03() {
 
             {/* 5th div */}
             <div data-aos="fade-up" data-aos-delay="100">
-              <div className="relative block group mb-2 cursor-pointer" onClick={() => setSelectedImage(FeaturesImage06)}>
+              <div
+                className="relative block group mb-2 cursor-pointer"
+                onClick={() => setSelectedImage(FeaturesImage06)}>
                 <div
                   className="absolute inset-0 pointer-events-none border-2 border-slate-500 opacity-20 translate-x-4 -translate-y-4 group-hover:translate-x-0 group-hover:translate-y-0 transition duration-300 ease-out -z-10"
                   aria-hidden="true"></div>
@@ -133,7 +143,9 @@ export default function FeaturesHome03() {
 
             {/* 6th div */}
             <div data-aos="fade-up" data-aos-delay="200">
-              <div className="relative block group mb-2 cursor-pointer" onClick={() => setSelectedImage(FeaturesImage07)}>
+              <div
+                className="relative block group mb-2 cursor-pointer"
+                onClick={() => setSelectedImage(FeaturesImage07)}>
                 <div
                   className="absolute inset-0 pointer-events-none border-2 border-slate-500 opacity-20 translate-x-4 -translate-y-4 group-hover:translate-x-0 group-hover:translate-y-0 transition duration-300 ease-out -z-10"
                   aria-hidden="true"></div>
@@ -151,7 +163,9 @@ export default function FeaturesHome03() {
 
             {/* 7th div */}
             <div data-aos="fade-up" className="hidden md:block">
-              <div className="relative block group mb-2 cursor-pointer" onClick={() => setSelectedImage(FeaturesImage08)}>
+              <div
+                className="relative block group mb-2 cursor-pointer"
+                onClick={() => setSelectedImage(FeaturesImage08)}>
                 <div
                   className="absolute inset-0 pointer-events-none border-2 border-slate-500 opacity-20 translate-x-4 -translate-y-4 group-hover:translate-x-0 group-hover:translate-y-0 transition duration-300 ease-out -z-10"
                   aria-hidden="true"></div>
@@ -169,7 +183,9 @@ export default function FeaturesHome03() {
 
             {/* 8th div */}
             <div data-aos="fade-up" data-aos-delay="100" className="hidden md:block">
-              <div className="relative block group mb-2 cursor-pointer" onClick={() => setSelectedImage(FeaturesImage09)}>
+              <div
+                className="relative block group mb-2 cursor-pointer"
+                onClick={() => setSelectedImage(FeaturesImage09)}>
                 <div
                   className="absolute inset-0 pointer-events-none border-2 border-slate-500 opacity-20 translate-x-4 -translate-y-4 group-hover:translate-x-0 group-hover:translate-y-0 transition duration-300 ease-out -z-10"
                   aria-hidden="true"></div>
@@ -187,7 +203,9 @@ export default function FeaturesHome03() {
 
             {/* 9th div */}
             <div data-aos="fade-up" data-aos-delay="200" className="hidden md:block">
-              <div className="relative block group mb-2 cursor-pointer" onClick={() => setSelectedImage(FeaturesImage10)}>
+              <div
+                className="relative block group mb-2 cursor-pointer"
+                onClick={() => setSelectedImage(FeaturesImage10)}>
                 <div
                   className="absolute inset-0 pointer-events-none border-2 border-slate-500 opacity-20 translate-x-4 -translate-y-4 group-hover:translate-x-0 group-hover:translate-y-0 transition duration-300 ease-out -z-10"
                   aria-hidden="true"></div>
@@ -210,14 +228,18 @@ export default function FeaturesHome03() {
       {selectedImage && (
         <div
           className="fixed inset-0 bg-black/80 z-50 flex items-center justify-center p-4"
-          onClick={() => setSelectedImage(null)}
-        >
+          onClick={() => setSelectedImage(null)}>
           <button
             className="absolute top-4 right-4 text-white hover:text-gray-300 transition"
             onClick={() => setSelectedImage(null)}
-            aria-label="Close"
-          >
-            <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+            aria-label="Close">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              className="h-8 w-8"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              strokeWidth={2}>
               <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
             </svg>
           </button>

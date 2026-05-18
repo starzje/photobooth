@@ -317,7 +317,7 @@ export default function PricingTables() {
         Za najam PhotoBootha na više sati ili dana, javite se kako bismo Vam složili personaliziranu ponudu.
       </div>
       <div className="mx-auto flex justify-center items-center text-center pt-2">
-        Uključuje dostavu, postavljanje i demontažu.
+        Cijena uključuje dostavu, postavljanje i demontažu.
       </div>
       <div className="mx-auto flex justify-center items-center text-center pt-2">
         *Generiranje QR koda ovisi o stabilnoj internet vezi te ga u nekim slučajevima ne možemo garantirati (npr.
