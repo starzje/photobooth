@@ -18,8 +18,9 @@ export default function HeroHome() {
             <div className="text-center md:text-left md:min-w-[30rem]" data-aos="fade-right">
               <h1 className="h1 font-playfair-display text-slate-100 mb-4">Photobooth Zagreb</h1>
               <p className="text-xl text-slate-400 mb-8">
-                Potreban vam je fotobooth za vjenčanje, rođendan, krstitke, maturalnu zabavu ili neku drugu prigodu?
-                Iznajmite naš fotobooth i zabava je zagarantirana!
+                Tražite fotobooth za vjenčanje, rođendan, krstitke, maturalnu zabavu ili korporativni event? Naš
+                photobooth dolazi s neograničenim ispisom fotografija, personaliziranim okvirima i knjigom uspomena —
+                zabava za goste svih uzrasta zagarantirana!
               </p>
               <div className="max-w-xs mx-auto sm:max-w-none sm:flex sm:justify-center md:justify-start space-y-4 sm:space-y-0 sm:space-x-4">
                 <div>
@@ -45,8 +46,8 @@ export default function HeroHome() {
               thumbHeight={405}
               thumbAlt="Modal video thumbnail"
               video="/videos/photobooth-video.mp4"
-              videoWidth={1920}
-              videoHeight={1080}
+              videoWidth={1080}
+              videoHeight={1920}
             />
           </div>
         </div>

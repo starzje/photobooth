@@ -1,7 +1,9 @@
+import "react-calendar/dist/Calendar.css";
 import "./css/style.css";
 import { Inter, Playfair_Display } from "next/font/google";
 import { Metadata } from "next";
 import CookieConsentManager from "@/components/utils/CookieConsentManager";
+import WhatsAppButton from "@/components/whatsapp-button";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -41,6 +43,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <body
         className={`${inter.variable} ${playfair.variable} font-inter antialiased bg-white text-slate-800 tracking-tight`}>
         <CookieConsentManager />
+        <WhatsAppButton />
         {children}
       </body>
     </html>

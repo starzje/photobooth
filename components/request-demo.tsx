@@ -1,4 +1,5 @@
 "use client";
+import { useState, useEffect, useRef } from "react";
 import { useForm, Controller } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import * as yup from "yup";
@@ -9,12 +10,14 @@ import Image from "next/image";
 import PageBg from "@/public/images/request-demo-bg.jpg";
 
 import toast, { Toaster } from "react-hot-toast";
+import Calendar from "react-calendar";
 
 // Yup schema
 const schema = yup.object().shape({
   email: yup.string().required("Email je obavezno polje").email("Upišite ispravan email"),
   ime: yup.string().required("Ime je obavezno polje"),
   grad: yup.string().required("Grad je obavezno polje"),
+  datumEventa: yup.string().required("Datum eventa je obavezno polje"),
   pitanje: yup.string().required("Vaša poruka je obavezno polje"),
   mobitel: yup
     .string()
@@ -24,6 +27,21 @@ const schema = yup.object().shape({
 });
 
 export default function RequestDemo() {
+  const [calendarOpen, setCalendarOpen] = useState(false);
+  const calendarRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    function handleClickOutside(e: MouseEvent) {
+      if (calendarRef.current && !calendarRef.current.contains(e.target as Node)) {
+        setCalendarOpen(false);
+      }
+    }
+    if (calendarOpen) {
+      document.addEventListener("mousedown", handleClickOutside);
+    }
+    return () => document.removeEventListener("mousedown", handleClickOutside);
+  }, [calendarOpen]);
+
   const {
     control,
     handleSubmit,
@@ -35,6 +53,7 @@ export default function RequestDemo() {
       email: "",
       ime: "",
       grad: "",
+      datumEventa: "",
       pitanje: "",
       mobitel: "",
       termsAccepted: true,
@@ -50,6 +69,7 @@ export default function RequestDemo() {
       user_name: data.ime,
       user_email: data.email,
       user_city: data.grad,
+      user_event_date: data.datumEventa,
       user_phone: data.mobitel,
       user_question: data.pitanje,
     };
@@ -63,7 +83,7 @@ export default function RequestDemo() {
         (error) => {
           console.log("FAILED...", error);
           reject(error);
-        }
+        },
       );
     });
 
@@ -78,10 +98,11 @@ export default function RequestDemo() {
         email: "",
         ime: "",
         grad: "",
+        datumEventa: "",
         pitanje: "",
         mobitel: "",
         termsAccepted: true,
-      })
+      }),
     );
   };
 
@@ -183,27 +204,91 @@ export default function RequestDemo() {
                       </>
                     </div>
                   </div>
-                  <div>
-                    <label className="block text-sm font-medium mb-1" htmlFor="address">
-                      Grad <span className="text-rose-500">*</span>
-                    </label>
-                    <Controller
-                      name="grad"
-                      control={control}
-                      render={({ field }) => (
-                        <input
-                          {...field}
-                          placeholder="Zagreb"
-                          className="form-input py-2 w-full placeholder-gray-400"
-                          type="text"
-                        />
-                      )}
-                    />
-                    <>
-                      {errors.grad ? (
-                        <span className="text-red-500 text-sm">{String(errors.grad.message)} </span>
-                      ) : undefined}
-                    </>
+                  <div className="space-y-4 sm:flex sm:space-y-0 sm:space-x-4">
+                    <div className="sm:w-1/2">
+                      <label className="block text-sm font-medium mb-1" htmlFor="address">
+                        Grad <span className="text-rose-500">*</span>
+                      </label>
+                      <Controller
+                        name="grad"
+                        control={control}
+                        render={({ field }) => (
+                          <input
+                            {...field}
+                            placeholder="Zagreb"
+                            className="form-input py-2 w-full placeholder-gray-400"
+                            type="text"
+                          />
+                        )}
+                      />
+                      <>
+                        {errors.grad ? (
+                          <span className="text-red-500 text-sm">{String(errors.grad.message)} </span>
+                        ) : undefined}
+                      </>
+                    </div>
+                    <div className="sm:w-1/2">
+                      <label className="block text-sm font-medium mb-1" htmlFor="datumEventa">
+                        Datum eventa <span className="text-rose-500">*</span>
+                      </label>
+                      <Controller
+                        name="datumEventa"
+                        control={control}
+                        render={({ field: { onChange, value } }) => {
+                          const parseLocalDate = (str: string) => {
+                            const [y, m, d] = str.split("-").map(Number);
+                            return new Date(y, m - 1, d);
+                          };
+                          const toLocalDateString = (date: Date) => {
+                            const y = date.getFullYear();
+                            const m = String(date.getMonth() + 1).padStart(2, "0");
+                            const d = String(date.getDate()).padStart(2, "0");
+                            return `${y}-${m}-${d}`;
+                          };
+                          return (
+                            <div className="relative" ref={calendarRef}>
+                              <input
+                                readOnly
+                                value={
+                                  value
+                                    ? parseLocalDate(value).toLocaleDateString("hr-HR", {
+                                        day: "2-digit",
+                                        month: "2-digit",
+                                        year: "numeric",
+                                      })
+                                    : ""
+                                }
+                                placeholder="Odaberite datum"
+                                className="form-input py-2 w-full placeholder-gray-400 cursor-pointer"
+                                onClick={() => setCalendarOpen(!calendarOpen)}
+                              />
+                              {calendarOpen && (
+                                <div className="absolute z-50 mt-1">
+                                  <Calendar
+                                    onChange={(date: any) => {
+                                      const d = date as Date;
+                                      onChange(toLocalDateString(d));
+                                      setCalendarOpen(false);
+                                    }}
+                                    value={value ? parseLocalDate(value) : null}
+                                    minDate={new Date()}
+                                    locale="hr-HR"
+                                    prev2Label={null}
+                                    next2Label={null}
+                                    minDetail="year"
+                                  />
+                                </div>
+                              )}
+                            </div>
+                          );
+                        }}
+                      />
+                      <>
+                        {errors.datumEventa ? (
+                          <span className="text-red-500 text-sm">{String(errors.datumEventa.message)} </span>
+                        ) : undefined}
+                      </>
+                    </div>
                   </div>
                   <div>
                     <label className="block text-sm font-medium mb-1" htmlFor="pitanje">
@@ -302,6 +387,9 @@ export default function RequestDemo() {
               <div className="space-y-3">
                 <p className="text-slate-400 italic">
                   Kontaktirajte nas i rado ćemo Vam pomoći u odabiru paketa ili odgovoriti na sva Vaša pitanja.
+                  <br />
+                  <br />
+                  Za brži dogovor, možete nas kontaktirati putem Whatsapp-a na broj +385 97 612 3689.
                 </p>
               </div>
             </div>

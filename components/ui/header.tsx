@@ -39,6 +39,13 @@ export default function Header({ mode = "dark" }: { mode?: string }) {
               </li>
               <li>
                 <a
+                  href="/#recenzije"
+                  className="font-medium text-slate-800 hover:text-blue-600 dark:text-slate-400 dark:hover:text-blue-600 px-3 lg:px-5 py-2 flex items-center transition duration-150 ease-in-out">
+                  Recenzije
+                </a>
+              </li>
+              <li>
+                <a
                   href="/#faq"
                   className="font-medium text-slate-800 hover:text-blue-600 dark:text-slate-400 dark:hover:text-blue-600 px-3 lg:px-5 py-2 flex items-center transition duration-150 ease-in-out">
                   FAQ

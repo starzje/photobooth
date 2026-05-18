@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { FaFacebook, FaInstagram } from "react-icons/fa";
+import { FaFacebook, FaInstagram, FaPhone } from "react-icons/fa";
 import { HiOutlineMail } from "react-icons/hi";
 
 export default function Footer() {
@@ -33,6 +33,13 @@ export default function Footer() {
               <li>
                 <a href="/#cjenik" className="text-slate-500 hover:text-blue-600 transition duration-150 ease-in-out">
                   Cjenik
+                </a>
+              </li>
+              <li>
+                <a
+                  href="/#recenzije"
+                  className="text-slate-500 hover:text-blue-600 transition duration-150 ease-in-out">
+                  Recenzije
                 </a>
               </li>
               <li>
@@ -75,6 +82,14 @@ export default function Footer() {
                   PhotoBooth Zagreb
                 </a>
               </li>
+              <li>
+                <a
+                  href="tel:+385976123689"
+                  className="text-slate-500 hover:text-blue-600 transition duration-150 ease-in-out flex gap-2 items-center">
+                  <FaPhone />
+                  +385 97 612 3689
+                </a>
+              </li>
             </ul>
           </div>
         </div>
@@ -93,7 +108,7 @@ export default function Footer() {
           </ul>
 
           {/* Copyrights note */}
-          <div className="text-sm text-slate-500 mr-4">© 2025 studio F.M.I. Sva prava zadržana</div>
+          <div className="text-sm text-slate-500 mr-4">© 2026. Creative House, obrt za usluge. Sva prava zadržana</div>
         </div>
       </div>
     </footer>

@@ -120,7 +120,8 @@ export default function FeaturesHome02() {
                   <div>
                     <h6 className="text-slate-800 font-medium mb-1">Elegantno oblikovan photobooth</h6>
                     <p className="text-slate-500">
-                    Dizajn koji se savršeno uklapa u bilo koju atmosferu vašeg događaja.
+                      Dizajn koji se savršeno uklapa u svaki događaj — od rustikalnih vjenčanja do elegantnih
+                      korporativnih evenata.
                     </p>
                   </div>
                 </button>
@@ -143,7 +144,8 @@ export default function FeaturesHome02() {
                   <div>
                     <h6 className="text-slate-800 font-medium mb-1">Neograničen ispis i Personalizirani dizajn</h6>
                     <p className="text-slate-500">
-                      Neograničen ispis fotografija s personaliziranim dizajnom okvira i prilagođenim rasporedom.
+                      Garantiramo da svaki gost odlazi kući s printanom fotografijom kao trajnom uspomenom –
+                      Personalizirani dizajn okvira I prilagođen raspored
                     </p>
                   </div>
                 </button>
@@ -166,8 +168,8 @@ export default function FeaturesHome02() {
                   <div>
                     <h6 className="text-slate-800 font-medium mb-1">Knjiga uspomena</h6>
                     <p className="text-slate-500">
-                      Uz svaki najam fotobootha, imate mogućnost uzimanja knjige uspomena s fotografijama i porukama
-                      gostiju.
+                      <b>Uključena uz svaki paket</b> — gosti zalijepe fotku i napišu poruku, a vi na kraju večeri
+                      odnosite trajnu uspomenu.
                     </p>
                   </div>
                 </button>
